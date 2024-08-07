@@ -17,16 +17,16 @@ public class Solution {
         boolean pair3 = (number2 == number3);
         boolean pair4 = (number1 == number2);
 
-        if (pair1)
+        if (pair1) {
             System.out.print(number1 + " " + number2 + " " + number3);
-            else if (pair2)
-                System.out.print(number1 + " " + number3);
-            else if (pair3)
-                System.out.print(number2 + " " + number3);
-            else if (pair4)
+        } else if (pair2)
+            System.out.print(number1 + " " + number3);
+        else if (pair3)
+            System.out.print(number2 + " " + number3);
+        else if (pair4)
             System.out.print(number1 + " " + number2);
 
 
-    //напишите тут ваш код
+        //напишите тут ваш код
     }
 }
