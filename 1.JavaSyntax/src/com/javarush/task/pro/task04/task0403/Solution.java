@@ -8,25 +8,25 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        Scanner vvod = new Scanner(System.in);
-        int x = 0;
-        boolean ent = false;
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
 
-        while (!ent) {
-            if (vvod.hasNextInt()) {
-                int tt = vvod.nextInt();
-                x = x + tt;
-            } else if (vvod.hasNextLine()) {
-                String tt1 = vvod.nextLine();
-                if (tt1.equals("ENTER")) {
-                    ent = true;}
-
+        while (true) {
+            if (scanner.hasNextInt()) {
+                int number = scanner.nextInt();
+                sum = sum + number;
+            } else if (scanner.hasNextLine()) {
+                String string = scanner.nextLine();
+                if (string.equals("ENTER")) {
+                    break;
                 }
+
             }
-        System.out.println(x);
-
-            //напишите тут ваш код
-
         }
+        System.out.println(sum);
+
+        //напишите тут ваш код
 
     }
+
+}
