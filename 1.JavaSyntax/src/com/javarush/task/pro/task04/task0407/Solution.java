@@ -8,13 +8,12 @@ public class Solution {
     public static void main(String[] args) {
         int number = 0;
         int summ = 0;
-        while (number < 101) {
-            summ = summ + number;
+        while (number < 100) {
             number++;
             if ((number % 3) == 0) {
-                summ = summ - number;
                 continue;
             }
+            summ = summ + number;
         }
         System.out.println(summ);
     }
