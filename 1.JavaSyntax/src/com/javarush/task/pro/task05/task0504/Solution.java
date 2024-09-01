@@ -11,11 +11,11 @@ public class Solution {
 
     public static void main(String[] args) {
         resultArray = new int[firstArray.length + secondArray.length];
-            for (int i = 0; i < resultArray.length; i++) {
-                if (i < firstArray.length)
-                    resultArray[i] = firstArray[i];
-                else
-                    resultArray[i] = secondArray[i - firstArray.length];
+        for (int i = 0; i < resultArray.length; i++) {
+            if (i < firstArray.length)
+                resultArray[i] = firstArray[i];
+            else
+                resultArray[i] = secondArray[i - firstArray.length];
 
             System.out.print(resultArray[i] + ", ");
         }
