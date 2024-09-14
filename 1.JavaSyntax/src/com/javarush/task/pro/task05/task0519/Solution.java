@@ -12,13 +12,13 @@ public class Solution {
     public static int element = 5;
 
     public static void main(String[] args) {
-        int[] arrayNew = Arrays.copyOf(array, 9);
+        int[] arrayNew = Arrays.copyOf(array, array.length);
         Arrays.sort(arrayNew);
         int index = Arrays.binarySearch(arrayNew, element);
-        if (index > 0) {
-            System.out.println(true);
+        if (index >= 0) {
+            System.out.println("true");
         } else {
-            System.out.println(false);
+            System.out.println("false");
         }
     }
 }
