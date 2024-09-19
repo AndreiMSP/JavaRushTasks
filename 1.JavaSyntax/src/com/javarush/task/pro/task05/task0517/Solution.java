@@ -9,19 +9,22 @@ import java.util.Arrays;
 public class Solution {
 
     public static int[][] result = new int[2][];
-    public static int[] array = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+    public static int[] array = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
 
     public static void main(String[] args) {
-        if (array.length % 2 != 0) {
+        if (array.length % 2 == 0) {
+            int[] arrayFirst = Arrays.copyOfRange(array, 0, array.length / 2);
+            int[] arraySecond = Arrays.copyOfRange(array, array.length / 2, array.length);
+            result[0] = arrayFirst;
+            result[1] = arraySecond;
+        } else if (array.length % 2 != 0) {
             int[] arrayFirst = Arrays.copyOfRange(array, 0, array.length / 2 + 1);
-            System.out.println(Arrays.toString(arrayFirst));
-            for (int i = 0; i < result.length; i++) {
-                for (int j = 0; j < result[i].length; j++) {
-                    result[j] = arrayFirst;
-                }
-
-            }
+            int[] arraySecond = Arrays.copyOfRange(array, array.length / 2 + 1, array.length);
+            result[0] = arrayFirst;
+            result[1] = arraySecond;
         }
         System.out.println(Arrays.deepToString(result));
     }
+
 }
+
