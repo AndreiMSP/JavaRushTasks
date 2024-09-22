@@ -18,7 +18,7 @@ public class Solution {
         //System.out.println(Arrays.deepToString(multiArray));
         for (int i = 0; i < number; i++) {
             int rowNumber = scanner.nextInt();
-            multiArray = new int[rowNumber][];
+            multiArray = new int[i][rowNumber];
 
         }
         System.out.println(Arrays.deepToString(multiArray));
