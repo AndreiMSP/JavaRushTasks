@@ -1,5 +1,6 @@
 package com.javarush.task.pro.task05.task0508;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /* 
@@ -27,7 +28,11 @@ public class Solution {
                     strings[j] = null;
                 }
             }
-            System.out.print(strings[i] + ", ");
+
+        }
+        for (int i = 0; i < strings.length; i++) {
+            String string = strings[i];
+            System.out.println(string);
         }
     }
 }

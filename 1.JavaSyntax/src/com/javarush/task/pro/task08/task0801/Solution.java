@@ -10,7 +10,7 @@ public class Solution {
 
     public static double sin(double a) {
 
-        return Math.sin(Math.toRadians(a));
+        return Math.sin(toRadians(a));
     }
 
     public static double cos(double a) {
