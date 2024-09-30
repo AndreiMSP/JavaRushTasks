@@ -15,16 +15,17 @@ public class Solution {
     }
 
     public static double pow(int number, int power) {
-        if (power == 0) {
+ /*       if (power == 0) {
             return 1;
         }
-/*
+
         int modulus = power < 0 ? power * -1 : power;
         int result = number;
         for (int i = 1; i < modulus; i++) {
             result *= number;
         }
 */
-        return Math.pow(number,power);
+        double result = Math.pow((double)number, (double)power);
+        return (int)result;
     }
 }
