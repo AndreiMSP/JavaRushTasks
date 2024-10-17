@@ -12,15 +12,12 @@ public class Solution {
         char[] symbols = new char[9];
         init(symbols);
         System.out.println(new String(symbols));
-        System.out.println(1 << 4);
+
     }
 
     public static void init(char[] symbols) {
         //напишите тут ваш код
-        Scanner scanner = new Scanner('\u00A9'+""+'\u004A'+'\u0061'+'\u0076'+'\u0061'+'\u0052'+'\u0075'+'\u0073'+'\u0068');
-        char[] newArray = scanner.next().toCharArray();
-        for (int i = 0; i < symbols.length; i++) {
-            symbols[i] =newArray[i];
-        }
+        String string = '©' + "" + 'J' + 'a' + 'v' + 'a' + 'R' + 'u' + 's' + 'h';
+        System.arraycopy(string.toCharArray(), 0, symbols, 0, symbols.length);
     }
 }
