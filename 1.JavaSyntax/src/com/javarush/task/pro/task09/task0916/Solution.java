@@ -10,8 +10,8 @@ public class Solution {
     }
 
     public static String format(String name, int salary) {
-        String phrase = "Меня зовут %s. Я буду зарабатывать $ %d в месяц.";
+        String phrase = "Меня зовут %s. Я буду зарабатывать $%d в месяц.";
 
-        return String.format(phrase,name,salary);
+        return String.format(phrase,name, salary);
     }
 }
