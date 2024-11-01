@@ -1,15 +1,15 @@
 package test;
 
+import com.javarush.task.pro.task10.task1011.Car;
+
 public class Main {
     public static void main(String[] args) {
-        start();
+
+        Cat cat = new Cat("Vasya");
+        System.out.println(cat.getName());
+
+        cat.equals("");
     }
 
-    public static void method(String string) {
-        System.out.println(string.length());
-    }
-    public static void start() {
-        method("Hello World");
 
-    }
 }
