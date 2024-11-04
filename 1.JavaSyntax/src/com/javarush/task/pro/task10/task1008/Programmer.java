@@ -15,10 +15,9 @@ public class Programmer {
 
         if (this.salary < salary) {
             this.salary = salary;
-            salary++;
 
         }
         //напишите тут ваш код
-
+//this.salary = this.salary < salary ? salary:this.salary;
     }
 }
