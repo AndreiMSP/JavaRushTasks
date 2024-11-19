@@ -25,6 +25,7 @@ public class UniversityGroup {
         for (String student : students) {
             if (student.equals(excludedStudent)) {
                 students.remove(student);
+                break;
             }
         }
     }
