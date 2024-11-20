@@ -17,37 +17,26 @@ public class Solution {
 
     public static String digitToText(char digit) {
         String result = "";
-        switch (digit) {
-            case '0':
-                result = "ноль";
-                return result;
-            case '1':
-                result = "один";
-                return result;
-            case '2':
-                result = "два";
-                return result;
-            case '3':
-                result = "три";
-                return result;
-            case '4':
-                result = "четыре";
-                return result;
-            case '5':
-                result = "пять";
-                return result;
-            case '6':
-                result = "шесть";
-                return result;
-            case '7':
-                result = "семь";
-                return result;
-            case '8':
-                result = "восемь";
-                return result;
-            case '9':
-                result = "девять";
-                return result;
+        if (digit == '0') {
+            result = "ноль";
+        } else if (digit == '1') {
+            result = "один";
+        } else if (digit == '2') {
+            result = "два";
+        } else if (digit == '3') {
+            result = "три";
+        } else if (digit == '4') {
+            result = "четыре";
+        } else if (digit == '5') {
+            result = "пять";
+        } else if (digit == '6') {
+            result = "шесть";
+        } else if (digit == '7') {
+            result = "семь";
+        } else if (digit == '8') {
+            result = "восемь";
+        } else if (digit == '9') {
+            result = "девять";
         }
         return result;
     }
