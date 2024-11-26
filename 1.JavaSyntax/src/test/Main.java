@@ -5,10 +5,14 @@ import com.javarush.task.pro.task10.task1011.Car;
 public class Main {
     public static void main(String[] args) {
 
-        Cat cat = new Cat("Vasya");
-        System.out.println(cat.getName());
+        A a1 = new M();
+        a1.start();
 
-        cat.equals("");
+        B b1 = new M();
+        b1.start();
+
+        M m = new M();
+        m.start();
     }
 
 
