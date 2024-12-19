@@ -15,7 +15,7 @@ public class Solution {
         }
         System.out.println("___________________________________");
 
-        HashSet<String> hashSet = arrayToHashSet(array);
+       /* HashSet<String> hashSet = arrayToHashSet(array);
         for(String s : hashSet) {
             System.out.println(s);
         }
@@ -23,5 +23,6 @@ public class Solution {
 
     public static HashSet<String> arrayToHashSet(String[] strings) {
         //напишите тут ваш код
+    }*/
     }
 }
