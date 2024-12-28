@@ -12,7 +12,7 @@ public class Solution {
 
     public static void reverse(ArrayList<Integer> list) {
         //for (int i = 0, j = list.size() - 1; i < list.size() / 2; i++) {
-           Collections.addAll(list);
+           //Collections.addAll(list);
             Collections.reverse(list);
 
             //Integer integer = list.get(i);
@@ -24,7 +24,7 @@ public class Solution {
     public static void sort(ArrayList<Integer> list) {
         //int n = list.size();
         //int temp;
-        Collections.addAll(list);
+        //Collections.addAll(list);
         Collections.sort(list);
         /* for (int i = 0; i < n; i++) {
             for (int j = 1; j < (n - i); j++) {
@@ -41,13 +41,13 @@ public class Solution {
        // for (int i = 0; i < distance; i++) {
          //   list.add(0, list.get(list.size() - 1));
            // list.remove(list.size() - 1);
-        Collections.addAll(list);
+        //Collections.addAll(list);
         Collections.rotate(list,distance);
        // }
     }
 
     public static void shuffle(ArrayList<Integer> list) {
-        Collections.addAll(list);
+      //  Collections.addAll(list);
         Collections.shuffle(list);
         //Random rand = new Random();
         //for (int i = 0; i < list.size(); i++) {

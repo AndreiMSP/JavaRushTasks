@@ -1,6 +1,7 @@
 package com.javarush.task.pro.task13.task1305;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 
 /* 
@@ -39,17 +40,33 @@ public class Solution {
 
     public static void removeBugWithFor(ArrayList<String> list) {
         for (int i = 0; i < list.size(); i++) {
-            //if (list.equals("bug")) {
-              //  list.remove(i);
-            //}
+            if (list.get(i).equalsIgnoreCase("bug")) {
+                list.remove(i);
+                i--;
+            }
         }
     }
 
     public static void removeBugWithWhile(ArrayList<String> list) {
+        Iterator<String> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            String string = iterator.next();
+            if(string.equalsIgnoreCase("bug")){
+                iterator.remove();
+            }
+
+        }
+
 
     }
 
     public static void removeBugWithCopy(ArrayList<String> list) {
-        //напишите тут ваш код
+        ArrayList<String> copy = new ArrayList<>(list);
+        for (String string : copy) {
+            if (string.equalsIgnoreCase("bug")) {
+                list.remove(string);
+            }
+
+        }
     }
 }
