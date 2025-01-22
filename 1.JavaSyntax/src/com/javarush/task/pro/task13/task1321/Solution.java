@@ -3,61 +3,39 @@ package com.javarush.task.pro.task13.task1321;
 public class Solution {
 
     public static void main(String[] args) {
-//        System.out.println(getTranslationForDayOfWeek("Вторник"));
-//        System.out.println(getTranslationForDayOfWeek("Пятница"));
-//        System.out.println(getTranslationForDayOfWeek("Высплюсенье"));
+        System.out.println(getTranslationForDayOfWeek("Вторник"));
+        System.out.println(getTranslationForDayOfWeek("Пятница"));
+        System.out.println(getTranslationForDayOfWeek("Высплюсенье"));
     }
 
-  /*  public static String getTranslationForDayOfWeek(String ru) {
+    public static String getTranslationForDayOfWeek(String ru) {
         String en;
-       /* if (ru.toLowerCase() == "Понедельник") {
+        if (ru.toLowerCase().equals("понедельник")) {
+            System.out.print(ru + " - ");
             en = "Monday";
-            break;
-        } else if (ru.toLowerCase() = "Вторник") {
+        } else if (ru.toLowerCase().equals("вторник")) {
             en = "Tuesday";
-            break;
-        } else if (ru.toLowerCase() = "Среда") {
-            en = "Tuesday";
-            break;
-        } else if (ru.toLowerCase() = "Четверг") {
-            en = "Tuesday";
-            break;
-        } else if (ru.toLowerCase() = "Пятница") {
-            en = "Tuesday";
-            break;
-        } else if (ru.toLowerCase() = "Суббота") {
-            en = "Tuesday";
-            break;
-        } else if (ru.toLowerCase() = "Воскресенье") {
-            en = "Tuesday";
-            break;
-        }*/
-//        switch (ru.toLowerCase()) {
-//            case "понедельник":
-//                en = "Monday";
-//                break;
-//            case "вторник":
-//                en = "Tuesday";
-//                break;
-//            case "среда":
-//                en = "Wednesday";
-//                break;
-//            case "четверг":
-//                en = "Thursday";
-//                break;
-//            case "пятница":
-//                en = "Friday";
-//                break;
-//            case "суббота":
-//                en = "Saturday";
-//                break;
-//            case "воскресенье":
-//                en = "Sunday";
-//                break;
-//            default:
-//                en = "Недействительный день недели";
-//        }
-//        return en;
+            System.out.print(ru + " - ");
+        } else if (ru.toLowerCase().equals("среда")) {
+            System.out.print(ru + " - ");
+            en = "Wednesday";
+        } else if (ru.toLowerCase().equals("четверг")) {
+            System.out.print(ru + " - ");
+            en = "Thursday";
+        } else if (ru.toLowerCase().equals("пятница")) {
+            System.out.print(ru + " - ");
+            en = "Friday";
+        } else if (ru.toLowerCase().equals("суббота")) {
+            System.out.print(ru + " - ");
+            en = "Saturday";
+        } else if (ru.toLowerCase().equals("воскресенье")) {
+            System.out.print(ru + " - ");
+            en = "Sunday";
+        } else {
+            System.out.print(ru + " - ");
+            en = "Недействительный день недели";
+        }
+        return en;
+    }
 
-    //}
 }
