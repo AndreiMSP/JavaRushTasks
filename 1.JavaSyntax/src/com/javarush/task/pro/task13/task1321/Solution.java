@@ -10,25 +10,25 @@ public class Solution {
 
     public static String getTranslationForDayOfWeek(String ru) {
         String en;
-        if (ru.toLowerCase().equals("понедельник")) {
+        if (ru.equalsIgnoreCase("понедельник")) {
             System.out.print(ru + " - ");
             en = "Monday";
-        } else if (ru.toLowerCase().equals("вторник")) {
+        } else if (ru.equalsIgnoreCase("вторник")) {
             en = "Tuesday";
             System.out.print(ru + " - ");
-        } else if (ru.toLowerCase().equals("среда")) {
+        } else if (ru.equalsIgnoreCase("среда")) {
             System.out.print(ru + " - ");
             en = "Wednesday";
-        } else if (ru.toLowerCase().equals("четверг")) {
+        } else if (ru.equalsIgnoreCase("четверг")) {
             System.out.print(ru + " - ");
             en = "Thursday";
-        } else if (ru.toLowerCase().equals("пятница")) {
+        } else if (ru.equalsIgnoreCase("пятница")) {
             System.out.print(ru + " - ");
             en = "Friday";
-        } else if (ru.toLowerCase().equals("суббота")) {
+        } else if (ru.equalsIgnoreCase("суббота")) {
             System.out.print(ru + " - ");
             en = "Saturday";
-        } else if (ru.toLowerCase().equals("воскресенье")) {
+        } else if (ru.equalsIgnoreCase("воскресенье")) {
             System.out.print(ru + " - ");
             en = "Sunday";
         } else {
