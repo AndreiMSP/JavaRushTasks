@@ -45,7 +45,8 @@ public class Solution {
         int age = Integer.parseInt(scanner.nextLine());
 
         //напишите тут ваш код
-        user.setName(name);
+        int numberCode = user.setName(name);
+
 
         user.setAge(age);
 
