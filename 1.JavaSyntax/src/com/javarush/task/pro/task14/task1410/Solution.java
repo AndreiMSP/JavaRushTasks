@@ -15,8 +15,11 @@ public class Solution {
     }
 
     static void copyFile(String sourceFile, String destinationFile) {
-        FileUtils.readFile(sourceFile);
-        FileUtils.writeFile(destinationFile);
+        try {FileUtils.readFile(sourceFile);
+        FileUtils.writeFile(destinationFile);}
+        catch (Exception e){
+            throw new RuntimeException(e);
+        }
         //напишите тут ваш код
     }
 }
