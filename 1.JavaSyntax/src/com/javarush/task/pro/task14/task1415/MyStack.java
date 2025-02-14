@@ -12,22 +12,29 @@ public class MyStack {
     private final List<String> storage = new LinkedList<>();
 
     public void push(String s) {
-        //напишите тут ваш код
+        storage.add(0,s);
     }
 
     public String pop() {
-      return null;  //напишите тут ваш код
+
+      String string = storage.get(0);
+      storage.remove(string);
+        return string;
     }
 
     public String peek() {
-        return  null; //напишите тут ваш код
+        String string = storage.get(0);
+        return  string;
     }
 
     public boolean empty() {
-    return  false;    //напишите тут ваш код
+
+        return storage.isEmpty();
     }
 
     public int search(String s) {
-        return 0;//напишите тут ваш код
+
+
+        return storage.indexOf(s);
     }
 }

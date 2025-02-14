@@ -1,5 +1,6 @@
 package com.javarush.task.pro.task14.task1401;
 
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -45,16 +46,33 @@ public class Solution {
         int age = Integer.parseInt(scanner.nextLine());
 
         //напишите тут ваш код
-        int numberCode = user.setName(name);
 
+        int nameCode = user.setName(name);
+        if (nameCode == -1) {
+            System.out.println(CANNOT_BE_NULL);
+        } else if (nameCode == -2) {
+            System.out.println(CANNOT_BE_EMPTY);
+        } else if (nameCode == -3) {
+            System.out.println(CANNOT_CONTAIN_DIGIT);
+        } else if (nameCode != 0) {
+            System.out.println(UNKNOWN_ERROR);
+        }
 
-        user.setAge(age);
-
+        int ageCode = user.setAge(age);
+        if (ageCode == -1) {
+            System.out.println(CANNOT_BE_NEGATIVE);
+        } else if (ageCode == -2) {
+            System.out.println(CANNOT_BE_TOO_BIG);
+        } else if (ageCode != 0) {
+            System.out.println(UNKNOWN_ERROR);
+        }
         users.add(user);
+
     }
 
     static void findUserIndex(User user) {
-        //напишите тут ваш код
-        System.out.printf(FOUND, user.getName(), users.indexOf(user));
+        if (users.indexOf(user) == -1) {
+            System.out.printf(NOT_FOUND, user.getName());
+        } else System.out.printf(FOUND, user.getName(), users.indexOf(user));
     }
 }
