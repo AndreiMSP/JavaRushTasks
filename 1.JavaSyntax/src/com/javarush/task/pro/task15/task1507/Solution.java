@@ -20,12 +20,10 @@ public class Solution {
 
         List<String> list = Files.readAllLines(path);
 
-        for (String string : list) {
-            if (string==1) {
-                break;
-            } else {
-                System.out.println(string);
-            }
+        for (int i = 0; i < list.size(); i = i + 2) {
+
+            System.out.println(list.get(i));
+
         }
     }
 }
