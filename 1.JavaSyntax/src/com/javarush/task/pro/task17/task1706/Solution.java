@@ -12,10 +12,14 @@ public class Solution {
         printRation(new Wolf());
     }
 
-    public static void printRation(Animal animal){
+    public static void printRation(Animal animal) {
         String herbivore = "Любит траву";
         String predator = "Любит мясо";
-
+        if (animal instanceof Herbivore) {
+            System.out.println(herbivore);
+        } else if (animal instanceof Predator) {
+            System.out.println(predator);
+        }
         //напишите тут ваш код
     }
 }
