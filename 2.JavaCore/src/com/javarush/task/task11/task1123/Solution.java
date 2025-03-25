@@ -28,8 +28,8 @@ public class Solution {
                 max = inputArray[i];
             }
         }
-        int asInt = Arrays.stream(inputArray).min().getAsInt();
-        int max1 = Collections.max(List.of(inputArray));
+        //int asInt = Arrays.stream(inputArray).min().getAsInt();
+        //int max1 = Collections.max(List.of(inputArray));
         return new Pair(min, max);
     }
 
