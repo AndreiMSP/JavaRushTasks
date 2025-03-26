@@ -9,11 +9,5 @@ public class Solution {
 
     }
 
-    public static print(int a) {
-        return null;
-    }
-
-    public static print(String b) {
-        return null;
-    }
+    //Напишите тут ваши методы
 }
