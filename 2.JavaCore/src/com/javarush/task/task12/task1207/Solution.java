@@ -6,8 +6,14 @@ Int и Integer
 
 public class Solution {
     public static void main(String[] args) {
-
+        Integer b = 15000;
+        print(100);
+        print(b);
     }
 
-    //Напишите тут ваши методы
+    public static void print(int a) {
+    }
+
+    public static void print(Integer b) {
+    }
 }
