@@ -1,31 +1,22 @@
 package test;
 
-import com.javarush.task.pro.task10.task1011.Car;
-
-
-import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
-    public static void main(String[] args) throws IOException {
-        String fileName = "D:\\Programming\\JavaRushTasks\\1.JavaSyntax\\src\\test\\file.txt";
-        FileReader fileReader = new FileReader(fileName);
-        BufferedReader bufferedReader = new BufferedReader(fileReader);
-        List<String> list = new ArrayList<>();
-        while (bufferedReader.ready()) {
-            String string = bufferedReader.readLine();
-            if (!string.isEmpty()) {
+    public static void main(String[] args) {
 
+//        A a = new A();
+//        a.start();
+//        B b = new B();
+//        b.start();
+//        C c = new C();
+//        c.start();
 
-                list.add(string);
-            }
-        }
+        I i = new K();
+        i.start();
+        J j = new K();
+        j.start();
 
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
-        }
-
+        K k = new K();
+        k.start();
 
     }
 }

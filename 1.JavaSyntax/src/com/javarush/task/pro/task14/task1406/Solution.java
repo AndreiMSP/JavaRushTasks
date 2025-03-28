@@ -8,13 +8,9 @@ import java.util.Scanner;
 
 class Solution {
 
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        try {
-            buyElephant(null, scanner);
-        } catch (Exception ignore) {
-
-        }
+        buyElephant(null, scanner);
     }
 
     static void buyElephant(String answer, Scanner scanner) {
@@ -22,8 +18,7 @@ class Solution {
             System.out.println("Купи слона");
         } else if (answer.toLowerCase().equals("ок")) {
             System.out.println("Так-то лучше :) Список твоих отговорок:");
-            throw new RuntimeException();
-
+            throw new SecurityException();
         } else {
             System.out.println("Все говорят \"" + answer + "\", а ты купи слона");
         }
@@ -36,7 +31,5 @@ class Solution {
             System.out.println(answer);
             throw e;
         }
-
     }
-
 }

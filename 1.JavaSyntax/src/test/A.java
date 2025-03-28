@@ -1,7 +1,7 @@
 package test;
 
-public interface A {
-    public abstract void start() ;
-
-
+public class A {
+    public void start() {
+        System.out.println("A start");
+    }
 }

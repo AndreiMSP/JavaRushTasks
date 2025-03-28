@@ -1,5 +1,7 @@
 package test;
 
-public interface B {
-    public abstract void start() ;
+public class B extends A {
+    public  void start() {
+        System.out.println("B start");
+    }
 }
