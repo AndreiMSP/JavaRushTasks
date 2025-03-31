@@ -29,8 +29,6 @@ public class StringLinkedList {
             }
             currentNode = currentNode.next;
             count++;
-
-
         }
         return null;
     }
