@@ -23,7 +23,7 @@ public class StringLinkedList {
     public String get(int index) {
         Node currentNode = first.next;
         int count = 0;
-        while (currentNode != null || index < 0) {
+        while (currentNode != null && index >= 0) {
             if (count == index) {
                 return currentNode.value;
             }

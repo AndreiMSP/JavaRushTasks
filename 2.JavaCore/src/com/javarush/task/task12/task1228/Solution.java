@@ -26,8 +26,7 @@ public class Solution {
         public void workVeryHard();
     }
 
-    public static class Human implements Secretary, Businessman, Worker{
-
+    public static class Human implements Secretary, Businessman, Worker {
 
         public void workHard() {
         }

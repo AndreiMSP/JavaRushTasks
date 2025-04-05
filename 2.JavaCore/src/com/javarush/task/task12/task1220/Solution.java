@@ -10,11 +10,11 @@ public class Solution {
     }
 
     public interface CanRun {
-        public void run();
+        public abstract void run();
     }
 
     public interface CanSwim {
-        public void swim();
+        public abstract void swim();
     }
 
     public abstract class Human implements CanRun, CanSwim {
