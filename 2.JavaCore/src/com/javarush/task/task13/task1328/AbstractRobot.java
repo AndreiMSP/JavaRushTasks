@@ -12,9 +12,8 @@ public abstract class AbstractRobot implements Attackable, Defensable {
         } else if (hitCount == 2) {
             attackedBodyPart = BodyPart.HEAD;
         } else if (hitCount == 3) {
-            hitCount = 1;
             attackedBodyPart = BodyPart.LEG;
-        } else if (hitCount == 4) {
+        } else {
             hitCount = 0;
             attackedBodyPart = BodyPart.CHEST;
         }
@@ -30,9 +29,8 @@ public abstract class AbstractRobot implements Attackable, Defensable {
         } else if (hitCount == 2) {
             defendedBodyPart = BodyPart.LEG;
         } else if (hitCount == 3) {
-            hitCount = 1;
             defendedBodyPart = BodyPart.ARM;
-        } else if (hitCount == 4) {
+        } else {
             hitCount = 0;
             defendedBodyPart = BodyPart.CHEST;
         }

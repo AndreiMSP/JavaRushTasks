@@ -14,9 +14,7 @@ public class Solution {
         Color getColor();
     }
 
-    public static class Fox {
-        public String getName() {
-            return "Fox";
-        }
+    public static abstract class Fox implements Animal {
+        public abstract String getName();
     }
 }
