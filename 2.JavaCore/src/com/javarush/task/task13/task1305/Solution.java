@@ -20,7 +20,7 @@ public class Solution {
         public static Hobby HOBBY = new Hobby();
     }
 
-    public static class Hobby implements Dream, Desire {
+    static class Hobby implements Dream, Desire {
         static int INDEX = 1;
 
         @Override
