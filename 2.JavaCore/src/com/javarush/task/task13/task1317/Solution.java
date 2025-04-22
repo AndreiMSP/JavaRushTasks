@@ -5,6 +5,8 @@ The weather is fine
 */
 
 public class Solution {
+
+
     public static void main(String[] args) {
         System.out.println(new Today(WeatherType.CLOUDY));
         System.out.println(new Today(WeatherType.FOGGY));
@@ -13,6 +15,7 @@ public class Solution {
 
     static class Today implements Weather {
         private String type;
+        private String name = WeatherType.CLOUDY;
 
         Today(String type) {
             this.type = type;
