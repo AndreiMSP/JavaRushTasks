@@ -14,22 +14,24 @@ public class Solution {
     }
 
     public static void callFoodMethods(Food food) {
-food.onSelect();
-food.onEat();
+        food.onSelect();
+        food.onEat();
+
         //тут добавьте вызов методов для переменной food
     }
 
     public static void callSelectableMethods(Selectable selectable) {
         selectable.onSelect();
-
         //тут добавьте вызов методов для переменной selectable
     }
 
     interface Selectable {
         void onSelect();
+
+
     }
 
-    static class Food  implements Selectable{
+    static class Food implements Selectable {
         public void onEat() {
             System.out.println("The food was eaten");
         }

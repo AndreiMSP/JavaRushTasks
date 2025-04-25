@@ -25,10 +25,11 @@ public class Solution {
 
     public static void haveFun(Person person) {
        if (person instanceof Player) {
-           Player player = new Player();
-           player.play();//напишите тут ваш код
+           Player player = (Player) person;
+           player.play();
        } else if (person instanceof  Dancer) {
-           new Dancer().dance();
+           Dancer dancer = (Dancer) person;
+           dancer.dance();
        }
     }
 
