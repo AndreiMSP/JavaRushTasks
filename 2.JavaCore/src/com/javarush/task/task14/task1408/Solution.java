@@ -14,10 +14,18 @@ public class Solution {
 
         static Hen getHen(String country) {
             Hen hen = null;
-            //напишите тут ваш код
+            if (country.equals(Country.BELARUS)) {
+                return new BelarusianHen();
+            } else if (country.equals(Country.UKRAINE)) {
+                return new UkrainianHen();
+            } else if (country.equals(Country.RUSSIA)) {
+                return new RussianHen();
+            } else if (country.equals(Country.MOLDOVA)) {
+                return new MoldovanHen();
+            }
             return hen;
         }
+
+
     }
-
-
 }
