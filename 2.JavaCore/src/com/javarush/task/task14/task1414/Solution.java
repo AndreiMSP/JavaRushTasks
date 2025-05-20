@@ -9,12 +9,17 @@ MovieFactory
 
 public class Solution {
     public static void main(String[] args) throws Exception {
+        //ввести с консоли несколько ключей (строк), пункт 7
 
         while (true) {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-            String key = reader.readLine();
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+            String key = bufferedReader.readLine();
+            Movie movie = MovieFactory.getMovie(key);
+            if (movie == null) {
+                break;
+            }
+            System.out.println(movie.getClass().getSimpleName());
         }
-        //ввести с консоли несколько ключей (строк), пункт 7
 
         /*
 8 Создать переменную movie класса Movie и для каждой введенной строки(ключа):
@@ -32,16 +37,14 @@ public class Solution {
             //создание объекта SoapOpera (мыльная опера) для ключа "soapOpera"
             if ("soapOpera".equals(key)) {
                 movie = new SoapOpera();
-                System.out.println(movie.getClass().getSimpleName());
-            } else if ("cartoon".equals(key)) {
+            }
+            if ("cartoon".equals(key)) {
                 movie = new Cartoon();
-                System.out.println(movie.getClass().getSimpleName());
-            } else if ("thriller".equals(key)) {
+            }
+            if ("thriller".equals(key)) {
                 movie = new Thriller();
-                System.out.println(movie.getClass().getSimpleName());
             }
 
-            //напишите тут ваш код, пункты 5,6
 
             return movie;
         }
@@ -51,15 +54,11 @@ public class Solution {
     }
 
     static class SoapOpera extends Movie {
-
     }
 
     static class Cartoon extends Movie {
-
     }
 
     static class Thriller extends Movie {
-
     }
-
 }
