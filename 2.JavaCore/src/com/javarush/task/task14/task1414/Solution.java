@@ -10,9 +10,9 @@ MovieFactory
 public class Solution {
     public static void main(String[] args) throws Exception {
         //ввести с консоли несколько ключей (строк), пункт 7
-
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
             String key = bufferedReader.readLine();
             Movie movie = MovieFactory.getMovie(key);
             if (movie == null) {
