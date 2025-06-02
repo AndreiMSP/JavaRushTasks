@@ -1,9 +1,6 @@
 package com.javarush.task.pro.task15.task1509;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.Scanner;
@@ -14,10 +11,9 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        try (InputStream stream = System.in;
-             InputStreamReader reader = new InputStreamReader(stream);
-             BufferedReader buff = new BufferedReader(reader)) {
-            String line = buff.readLine();
+        try (InputStream inputStream = System.in;
+             Scanner scanner = new Scanner(inputStream);) {
+            String line = scanner.nextLine();
             char[] chars = line.toCharArray();
             Set<Character> characters = new HashSet<>();
             for (char aChar : chars) {
@@ -29,6 +25,7 @@ public class Solution {
         } catch (IOException e) {
             System.out.println("Something went wrong : " + e);
         }
+
     }
 }
 
