@@ -18,6 +18,11 @@ public class Solution {
         printSomething(scanner.nextLine());
         String result = outputStream.toString();
         //напишите тут ваш код
+        outputStream.reset();
+        StringBuilder string = new StringBuilder(result);
+        byte[] bytes = string.reverse().toString().getBytes();
+        outputStream.write(bytes);
+        System.out.println(outputStream);;
     }
 
     public static void printSomething(String str) {
