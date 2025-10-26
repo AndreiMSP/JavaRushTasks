@@ -1,21 +1,20 @@
-package com.javarush.task.pro.task15.task1519;
+package com.javarush.task.pro.task15.task1521;
 
 import java.io.IOException;
-import java.nio.file.DirectoryStream;
+import java.io.InputStream;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Scanner;
 
 /* 
-Поверхностное копирование
+Временное сохранение файла
 */
 
 public class Solution {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
-        Path sourceDirectory = Path.of(scanner.nextLine());
-        Path targetDirectory = Path.of(scanner.nextLine());
+        String line = scanner.nextLine();
         //напишите тут ваш код
     }
 }
-
