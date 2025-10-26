@@ -14,12 +14,13 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         Path filePath = Path.of(scanner.nextLine());
         Path fileNewPath = Path.of(scanner.nextLine());
-        //напишите тут ваш код
-        if (Files.notExists(filePath)) {
+        if (Files.notExists(filePath)){
             Files.createFile(filePath);
-        } else if (Files.exists(filePath) && Files.notExists(fileNewPath)) {
-            Files.move(filePath, fileNewPath);
-        } else {
+
+        } else if (Files.exists(filePath)&&Files.notExists(fileNewPath)) {
+            Files.move(filePath,fileNewPath);
+        }
+        else {
             Files.delete(filePath);
         }
     }
