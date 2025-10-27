@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Iterator;
 import java.util.Scanner;
 
 /* 
@@ -18,7 +19,17 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         Path directory = Path.of(scanner.nextLine());
-        //напишите тут ваш код
+        try (DirectoryStream<Path> paths = Files.newDirectoryStream(directory);) {
+            for (Path path : paths) {
+                if (Files.isRegularFile(path)) {
+                    System.out.println(path + THIS_IS_FILE);
+                } else if (Files.isDirectory(path)) {
+                    System.out.println(path + THIS_IS_DIR);
+                }
+            }
+        }
+
+
     }
 }
 
