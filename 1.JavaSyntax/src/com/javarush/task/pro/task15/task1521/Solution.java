@@ -15,6 +15,18 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         String line = scanner.nextLine();
-        //напишите тут ваш код
+
+        Path tempFile = Files.createTempFile(null, null);
+
+        URL url = new URL(line);
+        InputStream inputStream = url.openStream();
+
+        byte[] bytes = inputStream.readAllBytes();
+
+        Files.write(tempFile, bytes );
+
+
+
+
     }
 }

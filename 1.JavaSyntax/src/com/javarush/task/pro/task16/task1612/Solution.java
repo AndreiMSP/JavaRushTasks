@@ -12,17 +12,26 @@ import java.util.*;
 public class Solution {
 
     public static void main(String[] args) {
-//        Map<LocalDate, List<LocalTime>> dateMap = DateTimeGenerator.generateDateMap();
-//        printCollection(dateMap.entrySet());
-//
-//        Set<LocalDateTime> dateSet = convert(dateMap);
-//        printCollection(dateSet);
+        Map<LocalDate, List<LocalTime>> dateMap = DateTimeGenerator.generateDateMap();
+        printCollection(dateMap.entrySet());
+
+        Set<LocalDateTime> dateSet = convert(dateMap);
+        printCollection(dateSet);
     }
 
     static Set<LocalDateTime> convert(Map<LocalDate, List<LocalTime>> sourceMap) {
-        //напишите тут ваш код
+        Set<LocalDateTime> set = new HashSet<>();
+        for (Map.Entry<LocalDate, List<LocalTime>> entry : sourceMap.entrySet()) {
+            LocalDate key = entry.getKey();
+            List<LocalTime> value = entry.getValue();
+            for (LocalTime localTime : value) {
+                LocalDateTime localDateTime = LocalDateTime.of(key, localTime);
+                set.add(localDateTime);
+            }
+        }
 
-        return null;
+
+        return set;
     }
 
     static void printCollection(Collection<?> collection) {
